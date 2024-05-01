@@ -1,0 +1,141 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EscolaCV.WebApi</name>
+    </assembly>
+    <members>
+        <member name="M:EscolaCV.WebApi.V1.Controller.EscolaController.CreateAsync(EscolaCV.Core.Share.DTOs.EscolaDto.CreateEscolaDto)">
+            <summary>
+            Adiicona uma nova escola, passando um json com o Nome,Email, Número de salas e a província
+            </summary>
+            <param name="model"></param>
+            <returns>status:201</returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:EscolaCV.WebApi.V1.Controller.EscolaController.UpdateAsync(EscolaCV.Core.Share.DTOs.EscolaDto.UpdateEscolaDto)">
+            <summary>
+            Actualizar os dados de uma escola
+            </summary>
+            <param name="model"></param>
+            <returns>status: 200</returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:EscolaCV.WebApi.V1.Controller.EscolaController.DeleteAsync(System.String)">
+            <summary>
+            Apagar uma escola
+            </summary>
+            <param name="EscolaId"></param>
+            <returns>status:200</returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:EscolaCV.WebApi.V1.Controller.EscolaController.GetAllAsync">
+            <summary>
+            obter uma coleção de escolas
+            </summary>
+            <returns>status:200</returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:EscolaCV.WebApi.V1.Controller.EscolaController.GetByIdAsync(System.String)">
+            <summary>
+            obter uma escola pelo Id
+            </summary>
+            <param name="EscolaId"></param>
+            <returns>status:200</returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:EscolaCV.WebApi.V1.Controller.EscolaController.UploadExcelFile(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Carregar dados de uma escola por meio de um ficheiro excel
+            </summary>
+            <param name="excelFile"></param>
+            <returns>status:200</returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:EscolaCV.WebApi.V1.Controller.PaisController.CreateAsync(EscolaCV.Core.Share.DTOs.PaisDto.CreatePaisDto)">
+            <summary>
+            Adicionar um novo País, para posterior associar as províncias, no corpo do json deve passar o código do pais e o Nome do pais
+            </summary>
+            <param name="model"></param>
+            <returns>status:201</returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:EscolaCV.WebApi.V1.Controller.PaisController.UpdateAsync(EscolaCV.Core.Share.DTOs.PaisDto.UpdatePaisDto)">
+            <summary>
+            Alterar o Nome do país
+            </summary>
+            <param name="model"></param>
+            <returns>status:201</returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:EscolaCV.WebApi.V1.Controller.PaisController.DeleteAsync(System.String)">
+            <summary>
+            Remover um país pelo id
+            </summary>
+            <param name="PaisId"></param>
+            <returns>status:200</returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:EscolaCV.WebApi.V1.Controller.PaisController.GetAllAsync">
+            <summary>
+            Obter uma coleção de todos os país anteriormente registado
+            </summary>
+            <returns>status:200</returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:EscolaCV.WebApi.V1.Controller.PaisController.GetByIdAsync(System.String)">
+            <summary>
+            Obter um país pelo Id
+            </summary>
+            <param name="PaisId"></param>
+            <returns>status:200</returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:EscolaCV.WebApi.V1.Controller.ProvinciaController.CreateAsync(EscolaCV.Core.Share.DTOs.ProvinciaDto.CreateProvinciaDto)">
+            <summary>
+            Adcionar/Cadastrar uma nova Provincia
+            </summary>
+            <param name="model"> </param>
+            <returns>status:201</returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:EscolaCV.WebApi.V1.Controller.ProvinciaController.UpdateAsync(EscolaCV.Core.Share.DTOs.ProvinciaDto.UpdateProvinciaDto)">
+            <summary>
+            Editar o nome da província
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:EscolaCV.WebApi.V1.Controller.ProvinciaController.DeleteAsync(System.String)">
+            <summary>
+            Remover uma província pelo Id
+            </summary>
+            <param name="ProvinciaId"></param>
+            <returns></returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:EscolaCV.WebApi.V1.Controller.ProvinciaController.GetAllAsync">
+            <summary>
+            Obter uma coleção de província
+            </summary>
+            <returns>status:200</returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:EscolaCV.WebApi.V1.Controller.ProvinciaController.GetByIdAsync(System.String)">
+            <summary>
+            Obter uma prvíncia pelo Id
+            </summary>
+            <param name="ProvinciaId"></param>
+            <returns>status:200</returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:EscolaCV.WebApi.V1.Controller.ProvinciaController.UploadExcelFile(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Adicionar províncias por meio de um ficheiro Json. o ficheiro deve obedecer ao modelo previamente disponibilizado
+            </summary>
+            <param name="jsonFile"></param>
+            <returns>status:200</returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+    </members>
+</doc>
